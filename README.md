@@ -110,7 +110,7 @@ I try to sleep in my chair so the nap is uncomfortable and I do not sleep to muc
 
 >Painter Salvador Dali and inventor Thomas Edison both actively worked with it. After a round of focused work, Dali sat on his arm chair to think and doze off. In one hand he held a big key and the moment he fell asleep the key dropped, which woke him up and so he went back to the canvas to continue his focused work. Steve Jobs broke up his daily thinking routine by going out for long walks.
 
-[Focused and Diffused Thinking: The Ping Pong Technique - YouTube](https://www.youtube.com/watch?v=WTr12dK2Se0&feature=youtu.be)
+[Focused and Diffused Thinking: The Ping Pong Technique - YouTube](https://www.youtube.com/watch?v=WTr12dK2Se0)
 
 ## Extreme night owls
 
