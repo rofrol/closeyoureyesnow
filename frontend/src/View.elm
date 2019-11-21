@@ -67,6 +67,20 @@ view _ =
                     , a "http://sasana.wikidot.com/medytacja-vipassana-w-prostych-slowach" (text "Polish translation")
                     , text " in web, pdf, epub formats."
                     ]
+                , h2 "Relax your body"
+                , p [ text "This the technique I more or less use to relax my body:" ]
+                , ul
+                    [ li [ text "Sit back in your chairs and put your feet flat on the deck. Knees apart, your hands limp on the inside of your lap. Now, close your eyes and drop your chin until it rests on your chest." ]
+                    , li [ text "Let’s breathe slowly, deeply, and regularly. Take all the wrinkles out of your forehead. Relax your scalp. Just let go. Now let your jaw sag-g-g. Let it drop open. Now relax the rest of your face muscles. Get the brook trout look on your face. Even relax your tongue and lips. Just let them go loose. Breathe slowly." ]
+                    , li [ text "Now, let’s go after the eight muscles that control your eyes. Let them go limp in their sockets. No focus, just let them go limp. Breathe slowly." ]
+                    , li [ text "Now drop your shoulders as low as they will go. You think that they are low, but let them go more. Did you feel the muscles in the back of your neck go limp? When you think you are really relaxed, let them go even more." ]
+                    , li [ text "Now, let’s relax your chest. Take a deep breath. Hold it. Exhale and blow out all your tensions. Just let your chest collapse. Let it sag-g-g. Imagine you are a big, heavy blob on the chair, a jellyfish. Breathe slowly. When you exhale, release more and more of your tensions." ]
+                    , li [ text "Let’s go after your arms. Talk directly to your arm muscles. First, talk to your right bicep. Tell it to relax, go limp. Do the same to your right forearm. Now to the right hand and fingers. Your arm should feel like a dead weight on your leg. Repeat the relaxation process with your left arm. Breathe slowly." ]
+                    , li [ text "Your entire upper body has been exposed to relaxation and a warm, pleasant feeling comes over you. You feel good. A sense of well-being invades your body." ]
+                    , li [ text "Now for your lower body. Talk to your right thigh muscles. Let them go to a dead weight on the chair. Let the meat hang on the bones. Go through the same routine for the right calf muscles. Then all the muscles of your right ankle and foot. Tell yourself that your right leg has no bones in it. It is just a flabby, heavy weight on the deck. Repeat the process with your left thigh, calf, ankle, and foot." ]
+                    , li [ text "At present you are all relaxed physically, or think you are. For a little insurance, let’s take three deep breaths and when you let them out, blow out all the remaining tensions, one . . . whoosh, two . . . whoosh, three . . . whoosh." ]
+                    , li [ text "You should relax every part of you body. Concentrating your focus on every part of your body one by one, and trying to relax it." ]
+                    ]
                 ]
             )
         ]
@@ -167,7 +181,15 @@ ul children =
         , width fill
         , paddingEach { each | bottom = 16, left = 20 }
         ]
-        children
+        (List.map
+            (\child ->
+                row [ width fill ]
+                    [ el [ width (px 20), height (px 20), alignTop, moveUp 2 ] (text "•")
+                    , child
+                    ]
+            )
+            children
+        )
 
 
 
@@ -176,10 +198,7 @@ ul children =
 
 li : List (Element msg) -> Element msg
 li children =
-    row [ width fill ]
-        [ el [ width (px 20), height (px 20), alignTop, moveUp 2 ] (text "•")
-        , baseParagraph [ alignTop ] children
-        ]
+    baseParagraph [ alignTop ] children
 
 
 
