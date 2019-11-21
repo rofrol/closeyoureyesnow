@@ -155,12 +155,10 @@ a url label =
 
 
 img url =
-    p
-        [ image [ width fill ]
-            { src = url
-            , description = ""
-            }
-        ]
+    image [ width fill, paddingEach { each | bottom = 16 } ]
+        { src = url
+        , description = ""
+        }
 
 
 ul children =
