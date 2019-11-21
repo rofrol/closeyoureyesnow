@@ -63,9 +63,9 @@ view _ =
                     , a "http://www.vipassana.com/meditation/mindfulness_in_plain_english.php" (text "Mindfulness in Plain English by Ven. Henepola Gunaratana")
                     , text "."
                     , a "http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf" (text "PDF")
-                    , text "."
+                    , text ". "
                     , a "http://sasana.wikidot.com/medytacja-vipassana-w-prostych-slowach" (text "Polish translation")
-                    , text "in , pdf, epub formats."
+                    , text " in web, pdf, epub formats."
                     ]
                 ]
             )
