@@ -1,13 +1,14 @@
 #!/bin/bash
 set -e # stop on error
 
-DEPLOY='master'
+DEPLOY='gh-pages'
 DEVEL='devel'
 
 echo bulid client ...
 
 mkdir -p build
-cp index.html build/
+cp frontend/index.html build/
+(cd frontend && elm make src/Main.elm --output ../build/elm.js)
 
 echo reset $DEPLOY branch to $DEVEL ...
 git fetch -f . $DEVEL:$DEPLOY
