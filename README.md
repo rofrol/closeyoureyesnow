@@ -141,7 +141,7 @@ But they reported lower levels of sleepiness, stress and depression, while tests
 
 https://www.ted.com/talks/matt_walker_sleep_is_your_superpower or [youtube](https://www.youtube.com/watch?v=5MuIMqhT8DM)
 
-One of my most controversial software opinions is that your sleep quality and stress level matter far, far more than the languages you use or the practices you follow. Nothing else comes close: not type systems, not TDD, not formal methods, not ANYTHING.
+>One of my most controversial software opinions is that your sleep quality and stress level matter far, far more than the languages you use or the practices you follow. Nothing else comes close: not type systems, not TDD, not formal methods, not ANYTHING.
 
 https://twitter.com/hillelogram/status/1119709859979714560
 

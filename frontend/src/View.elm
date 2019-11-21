@@ -125,6 +125,52 @@ view _ =
                 , p [ text "I try to sleep in my chair so the nap is uncomfortable and I do not sleep to much. 5-10 minutes is ok to revitalize. Similar technique:" ]
                 , blockquote [ "Painter Salvador Dali and inventor Thomas Edison both actively worked with it. After a round of focused work, Dali sat on his arm chair to think and doze off. In one hand he held a big key and the moment he fell asleep the key dropped, which woke him up and so he went back to the canvas to continue his focused work. Steve Jobs broke up his daily thinking routine by going out for long walks." ]
                 , a "https://www.youtube.com/watch?v=WTr12dK2Se0" (Just "Focused and Diffused Thinking: The Ping Pong Technique - YouTube")
+                , h2 "Extreme night owls"
+                , p [ text """Scientists studied 21 "extreme night owls" who were going to bed, on average, at 02:30 and not waking until after 10:00.""" ]
+                , p [ text "Their instructions were to:" ]
+                , ul
+                    [ li [ text "Wake up 2-3 hours earlier than usual and get plenty of outdoor light in the morning" ]
+                    , li [ text "Eat breakfast as soon as possible" ]
+                    , li [ text "Exercise only in the morning" ]
+                    , li [ text "Have lunch at the same time every day and eat nothing after 19:00" ]
+                    , li [ text "Banish caffeine after 15:00" ]
+                    , li [ text "Have no naps after 16:00" ]
+                    , li [ text "Go to bed 2-3 hours earlier than usual and limit light in the evenings" ]
+                    , li [ text "Maintain the same sleep and wake times every day" ]
+                    ]
+                , p [ text "After three weeks, people had successfully shifted their body clocks two hours earlier in the day, the analysis by the University of Birmingham, University of Surrey and Monash University showed." ]
+                , p [ text "The results, in the journal Sleep Medicine, showed people still got the same hours of shut-eye." ]
+                , p [ text "But they reported lower levels of sleepiness, stress and depression, while tests showed their reaction times also improved." ]
+                , ul
+                    [ li [ a "https://www.bbc.com/news/health-48558309" (Just "Night owls: Simple sleep tweaks boost wellbeing - BBC News") ]
+                    , li [ a "https://news.ycombinator.com/item?id=20146168" Nothing ]
+                    ]
+                , h2 "Sleep is your super power"
+                , p [ a "https://www.ted.com/talks/matt_walker_sleep_is_your_superpower" Nothing, text " or ", a "" (Just "youtube") ]
+                , blockquote [ "One of my most controversial software opinions is that your sleep quality and stress level matter far, far more than the languages you use or the practices you follow. Nothing else comes close: not type systems, not TDD, not formal methods, not ANYTHING." ]
+                , p [ a "https://twitter.com/hillelogram/status/1119709859979714560" Nothing ]
+                , p [ text "By reanalyzing the data, she and her colleagues made two key findings. First, they found that the volunteers’ performance improved primarily during the short rests, and not during typing. The improvements made during the rest periods added up to the overall gains the volunteers made that day. Moreover, these gains were much greater than the ones seen after the volunteers returned the next day to try again, suggesting that the early breaks played as critical a role in learning as the practicing itself." ]
+                , p [ text "Second, by looking at the brain waves, Dr. Bönstrup found activity patterns that suggested the volunteers’ brains were consolidating, or solidifying, memories during the rest periods. Specifically, they found that the changes in the size of brain waves, called beta rhythms, correlated with the improvements the volunteers made during the rests." ]
+                , p [ text "Further analysis suggested that the changes in beta oscillations primarily happened in the right hemispheres of the volunteers’ brains and along neural networks connecting the frontal and parietal lobes that are known to help control the planning of movements. These changes only happened during the breaks and were the only brain wave patterns that correlated with performance." ]
+                , p [ text "“Our results suggest that it may be important to optimize the timing and configuration of rest intervals when implementing rehabilitative treatments in stroke patients or when learning to play the piano in normal volunteers,” said Dr. Cohen. “Whether these results apply to other forms of learning and memory formation remains an open question.”" ]
+                , p [ text "Dr. Cohen’s team plans to explore, in greater detail, the role of these early resting periods in learning and memory." ]
+                , ul
+                    [ a "https://www.ninds.nih.gov/News-Events/News-and-Press-Releases/Press-Releases/Want-learn-new-skill-Take-some-short-breaks" Nothing
+                    , a "https://news.ycombinator.com/item?id=19661949" Nothing
+                    ]
+                , h2 "More links"
+                , ul
+                    [ a "https://news.ycombinator.com/item?id=21205021" (Just "What Happens to the Body on No Sleep | Hacker News")
+                    , a "https://news.ycombinator.com/item?id=20146168" (Just "Sleep tweaks boost night owls' wellbeing | Hacker News")
+                    , a "https://news.ycombinator.com/item?id=19849445" (Just "Researchers identify sleep as a reason why personality traits predict longevity | Hacker News")
+                    , a "https://news.ycombinator.com/item?id=18798366" (Just "Why We Sleep, and Why We Often Can’t | Hacker News")
+                    ]
+                , h2 "More from Sadhguru"
+                , ul
+                    [ a "https://www.youtube.com/watch?v=iEh7cBv1kMc" (Just "Do these and your sleep quota will go down - Sadhguru about methods of Managing Energy. - YouTube")
+                    , a "https://www.youtube.com/watch?v=GM0lU5Dq7eA" (Just "Tips to Eat Right & Sleep Less For Students - Sadhguru - YouTube")
+                    , a "https://www.youtube.com/watch?v=a6danRWYxpo" (Just "Night Owl or Early Bird: Which Is Better? #YouthAndTruth - YouTube")
+                    ]
                 ]
             )
         ]
@@ -177,7 +223,7 @@ h2 text_ =
 
 p : List (Element msg) -> Element msg
 p children =
-    baseParagraph [ paddingEach { each | bottom = 16 } ] children
+    baseParagraph [ paddingEach { each | bottom = 16 }, spacing 8 ] children
 
 
 blockquote texts =
