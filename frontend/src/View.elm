@@ -45,7 +45,7 @@ view _ =
                         (Just "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/")
                     ]
                 , p
-                    [ text "After reading this, I thought about this "
+                    [ text "After reading this, I thought about "
                     , a
                         "https://youtu.be/UENRVfdnGxs?t=53"
                         (Just "scene in the sleeping pod from The Fifth Element (1997)")

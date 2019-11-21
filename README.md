@@ -7,11 +7,12 @@ I am sharing this for the greater benefit of humanity.
 ## Inspiration
 
 >Do NOT Compromise On Sleep
+>
 >This is where your approach to Time Management should begin
 
 https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/
 
-After reading this, I thought about this [scene in the sleeping pod from The Fifth Element (1997)](https://youtu.be/UENRVfdnGxs?t=53):
+After reading this, I thought about [scene in the sleeping pod from The Fifth Element (1997)](https://youtu.be/UENRVfdnGxs?t=53):
 
 ![](/frontend/TheFifthElement1997TakeoffScene.gif)
 
@@ -97,7 +98,7 @@ But do not open eyes until you are sure you have slept enought.
 
 ## Green tea better then coffee
 
-I try to not drin coffee. If I need to wake up mysefl, I just drink green tea more frequently. Or infuse more leaves in a cup.
+I try to not drink coffee. If I need to wake up mysefl, I just drink green tea more frequently. Or infuse more leaves in a cup.
 
 ## Eating
 
@@ -105,7 +106,7 @@ I try to eat big breakfast and do not eat after 20:00.
 
 ## When I need shot nap during day
 
-I try to sleep in my chair so the nap is uncomfortable and I do not sleep to much. 5-10 minutes nap is ok to revitalize. Similar technique:
+I try to sleep in my chair so the nap is uncomfortable and I do not sleep to much. 5-10 minutes is ok to revitalize. Similar technique:
 
 >Painter Salvador Dali and inventor Thomas Edison both actively worked with it. After a round of focused work, Dali sat on his arm chair to think and doze off. In one hand he held a big key and the moment he fell asleep the key dropped, which woke him up and so he went back to the canvas to continue his focused work. Steve Jobs broke up his daily thinking routine by going out for long walks.
 
