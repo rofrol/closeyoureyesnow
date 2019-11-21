@@ -56,10 +56,17 @@ view _ =
                     [ li [ text "Sleep with your head directed to East (best) or West (good). North and South are very bad." ]
                     , li [ text """Repeat: when you inhale say in your mind "This is not my body", when you exhale "This is not my mind".""" ]
                     ]
-
-                -- I'm not sure if this direction helps, but this mantra definitelly helps me.
-                -- I am also focusing on my breath.
-                -- I am using here Vipassana Meditation which I learnt from Mindfulness in Plain English by Ven. Henepola Gunaratana. PDF. Polish translation in web, pdf, epub formats.
+                , p [ text "I'm not sure if this direction helps, but this mantra definitelly helps me." ]
+                , p [ text "I am also focusing on my breath." ]
+                , p
+                    [ text "I am using here Vipassana Meditation which I learnt from "
+                    , a "http://www.vipassana.com/meditation/mindfulness_in_plain_english.php" (text "Mindfulness in Plain English by Ven. Henepola Gunaratana")
+                    , text "."
+                    , a "http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf" (text "PDF")
+                    , text "."
+                    , a "http://sasana.wikidot.com/medytacja-vipassana-w-prostych-slowach" (text "Polish translation")
+                    , text "in , pdf, epub formats."
+                    ]
                 ]
             )
         ]
@@ -70,22 +77,12 @@ h1 : String -> Element msg
 h1 text_ =
     el
         [ width fill
-        , paddingEach
-            { bottom = 16
-            , left = 0
-            , right = 0
-            , top = 0
-            }
+        , paddingEach { each | bottom = 16 }
         , Region.heading 1
         ]
         (el
             [ Border.color Colors.headingBorder
-            , Border.widthEach
-                { bottom = 1
-                , left = 0
-                , right = 0
-                , top = 0
-                }
+            , Border.widthEach { each | bottom = 1 }
             , width fill
             ]
             (paragraph
@@ -93,12 +90,7 @@ h1 text_ =
                 , Font.bold
                 , Font.color Colors.text
                 , HtmlA.style "word-break" "break-word" |> htmlAttribute
-                , paddingEach
-                    { bottom = 9
-                    , left = 0
-                    , right = 0
-                    , top = 0
-                    }
+                , paddingEach { each | bottom = 9 }
                 ]
                 [ text text_ ]
             )
@@ -109,22 +101,12 @@ h2 : String -> Element msg
 h2 text_ =
     el
         [ width fill
-        , paddingEach
-            { bottom = 16
-            , left = 0
-            , right = 0
-            , top = 24
-            }
+        , paddingEach { each | bottom = 16, top = 24 }
         , Region.heading 2
         ]
         (el
             [ Border.color Colors.headingBorder
-            , Border.widthEach
-                { bottom = 1
-                , left = 0
-                , right = 0
-                , top = 0
-                }
+            , Border.widthEach { each | bottom = 1 }
             , width fill
             ]
             (paragraph
@@ -132,12 +114,7 @@ h2 text_ =
                 , Font.bold
                 , Font.color Colors.text
                 , HtmlA.style "word-break" "break-word" |> htmlAttribute
-                , paddingEach
-                    { bottom = 7
-                    , left = 0
-                    , right = 0
-                    , top = 0
-                    }
+                , paddingEach { each | bottom = 7 }
                 ]
                 [ text text_ ]
             )
@@ -150,13 +127,8 @@ p children =
         [ Font.size 16
         , Font.color Colors.text
         , HtmlA.style "word-break" "break-word" |> htmlAttribute
-        , spacing 3
-        , paddingEach
-            { bottom = 16
-            , left = 0
-            , right = 0
-            , top = 0
-            }
+        , spacing 10
+        , paddingEach { each | bottom = 16 }
         ]
         children
 
@@ -165,16 +137,11 @@ blockquote texts =
     el
         [ Font.color Colors.blockquote
         , Font.size 16
-        , paddingEach { top = 0, right = 0, bottom = 16, left = 0 }
+        , paddingEach { each | bottom = 16 }
         ]
         (column
             [ Border.color Colors.blockquoteBorder
-            , Border.widthEach
-                { bottom = 0
-                , left = 4
-                , right = 0
-                , top = 0
-                }
+            , Border.widthEach { each | left = 4 }
             , paddingXY 16 0
             , spacing 10
             ]
@@ -190,12 +157,7 @@ a url label =
     link
         [ Font.color Colors.link
         , Border.color Colors.transparent
-        , Border.widthEach
-            { bottom = 1
-            , left = 0
-            , top = 0
-            , right = 0
-            }
+        , Border.widthEach { each | bottom = 1 }
         , mouseOver [ Border.color <| Colors.link ]
         ]
         { url = url
@@ -216,12 +178,7 @@ ul children =
     column
         [ spacing 16
         , width fill
-        , paddingEach
-            { top = 0
-            , right = 0
-            , bottom = 0
-            , left = 20
-            }
+        , paddingEach { each | bottom = 16, left = 20 }
         ]
         children
 
@@ -259,3 +216,7 @@ li children =
 --                 |> html
 --         [] ->
 --             none
+
+
+each =
+    { top = 0, right = 0, bottom = 0, left = 0 }
