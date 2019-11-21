@@ -197,9 +197,9 @@ img url =
 
 ul children =
     column
-        [ spacing 16
+        [ spacing 8
         , width fill
-        , paddingEach { each | bottom = 16, left = 20 }
+        , paddingEach { each | top = 7, bottom = 16, left = 20 }
         ]
         (List.map
             (\child ->
@@ -220,9 +220,9 @@ ul children =
 
 ol children =
     column
-        [ spacing 16
+        [ spacing 8
         , width fill
-        , paddingEach { each | bottom = 16, left = 20 }
+        , paddingEach { each | top = 7, bottom = 16, left = 20 }
         ]
         (List.map
             (\( i, child ) ->
