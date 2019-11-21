@@ -17,7 +17,21 @@ view _ =
     , body =
         [ layout
             []
-            (column [ width (px 946), paddingXY 48 40, centerX ]
+            (column
+                [ width (px 946)
+                , paddingXY 48 40
+                , centerX
+                , Font.family
+                    [ Font.typeface "-apple-system"
+                    , Font.typeface "BlinkMacSystemFont"
+                    , Font.typeface "Segoe UI"
+                    , Font.typeface "Helvetica"
+                    , Font.typeface "Arial"
+                    , Font.sansSerif
+                    , Font.typeface "Apple Color Emoji"
+                    , Font.typeface "Segoe UI Emoji"
+                    ]
+                ]
                 [ h1 "Close Your Eyes Now"
                 , p [ text "This the combinations of techniques to get into bed at 22:00 and fall asleep in short time." ]
                 , p [ text "I am sharing this for the greater benefit of humanity." ]
@@ -83,9 +97,8 @@ view _ =
                     ]
                 , ul
                     [ li [ a "https://www.artofmanliness.com/articles/fall-asleep-fast/" Nothing ]
-
-                    -- https://skeptics.stackexchange.com/questions/41528/relax-and-win-classified-military-method-to-fall-asleep-quick
-                    -- https://www.amazon.com/Relax-Win-Championship-Lloyd-Winter/dp/0498025411
+                    , li [ a "https://skeptics.stackexchange.com/questions/41528/relax-and-win-classified-military-method-to-fall-asleep-quick" Nothing ]
+                    , li [ a "https://www.amazon.com/Relax-Win-Championship-Lloyd-Winter/dp/0498025411" Nothing ]
                     ]
                 ]
             )
