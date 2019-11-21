@@ -51,7 +51,7 @@ view _ =
                 , h2 "Attitude"
                 , p [ text "You need to want to fall a asleep. Otherwise you coul lay in your bad awake for several hours like me. If you have this attitude, you can apply next techniques." ]
                 , h2 "Meditation"
-                , p [ text "According to Sadhguru - Learn How To Sleep Correctly you need to:" ]
+                , p [ text "According to ", a "https://www.youtube.com/watch?v=3soroEZ3yBk" (text "Sadhguru - Learn How To Sleep Correctly"), text " you need to:" ]
                 , ul
                     [ li [ text "Sleep with your head directed to East (best) or West (good). North and South are very bad." ]
                     , li [ text """Repeat: when you inhale say in your mind "This is not my body", when you exhale "This is not my mind".""" ]
