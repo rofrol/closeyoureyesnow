@@ -96,7 +96,7 @@ If you wake up before sleeping 8 hours or similar for you, or you are not sure h
 
 But do not open eyes until you are sure you have slept enought.
 
-## Green tea better then coffee
+## Green tea better than coffee
 
 I try to not drink coffee. If I need to wake up mysefl, I just drink green tea more frequently. Or infuse more leaves in a cup.
 
@@ -104,7 +104,7 @@ I try to not drink coffee. If I need to wake up mysefl, I just drink green tea m
 
 I try to eat big breakfast and do not eat after 20:00.
 
-## When I need shot nap during day
+## When I need short nap during day
 
 I try to sleep in my chair so the nap is uncomfortable and I do not sleep to much. 5-10 minutes is ok to revitalize. Similar technique:
 

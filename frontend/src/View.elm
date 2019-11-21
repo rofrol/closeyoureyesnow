@@ -117,11 +117,11 @@ view _ =
                 , h2 "When you wake during night"
                 , p [ text """If you wake up before sleeping 8 hours or similar for you, or you are not sure how long have you slept, ask Siri "What's the time?" or Google Assistant or Alexa or Cortana or whatever.""" ]
                 , p [ text "But do not open eyes until you are sure you have slept enought." ]
-                , h2 "Green tea better then coffee"
+                , h2 "Green tea better than coffee"
                 , p [ text "I try to not drink coffee. If I need to wake up mysefl, I just drink green tea more frequently. Or infuse more leaves in a cup." ]
                 , h2 "Eating"
                 , p [ text "I try to eat big breakfast and do not eat after 20:00." ]
-                , h2 "When I need shot nap during day"
+                , h2 "When I need short nap during day"
                 , p [ text "I try to sleep in my chair so the nap is uncomfortable and I do not sleep to much. 5-10 minutes is ok to revitalize. Similar technique:" ]
                 , blockquote [ "Painter Salvador Dali and inventor Thomas Edison both actively worked with it. After a round of focused work, Dali sat on his arm chair to think and doze off. In one hand he held a big key and the moment he fell asleep the key dropped, which woke him up and so he went back to the canvas to continue his focused work. Steve Jobs broke up his daily thinking routine by going out for long walks." ]
                 , a "https://www.youtube.com/watch?v=WTr12dK2Se0" (Just "Focused and Diffused Thinking: The Ping Pong Technique - YouTube")
