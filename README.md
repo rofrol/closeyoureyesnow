@@ -43,8 +43,8 @@ You need to want to fall a asleep. Otherwise you coul lay in your bad awake for 
 
 According to [Sadhguru - Learn How To Sleep Correctly](https://www.youtube.com/watch?v=3soroEZ3yBk) you need to:
 
-- sleep with your head directed to East (best) or West (good). North and South are very bad.
-- repeat: When you inhale say in your mind "This is not my body", when you exhale "This is not my mind".
+- Sleep with your head directed to East (best) or West (good). North and South are very bad.
+- Repeat: when you inhale say in your mind "This is not my body", when you exhale "This is not my mind".
 
 I'm not sure if this direction helps, but this mantra definitelly helps me.
 

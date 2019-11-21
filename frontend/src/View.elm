@@ -52,9 +52,11 @@ view _ =
                 , p [ text "You need to want to fall a asleep. Otherwise you coul lay in your bad awake for several hours like me. If you have this attitude, you can apply next techniques." ]
                 , h2 "Meditation"
                 , p [ text "According to Sadhguru - Learn How To Sleep Correctly you need to:" ]
+                , ul
+                    [ li [ text "Sleep with your head directed to East (best) or West (good). North and South are very bad." ]
+                    , li [ text """Repeat: when you inhale say in your mind "This is not my body", when you exhale "This is not my mind".""" ]
+                    ]
 
-                --     sleep with your head directed to East (best) or West (good). North and South are very bad.
-                --     repeat: When you inhale say in your mind "This is not my body", when you exhale "This is not my mind".
                 -- I'm not sure if this direction helps, but this mantra definitelly helps me.
                 -- I am also focusing on my breath.
                 -- I am using here Vipassana Meditation which I learnt from Mindfulness in Plain English by Ven. Henepola Gunaratana. PDF. Polish translation in web, pdf, epub formats.
@@ -208,3 +210,52 @@ img url =
             , description = ""
             }
         ]
+
+
+ul children =
+    column
+        [ spacing 16
+        , width fill
+        , paddingEach
+            { top = 0
+            , right = 0
+            , bottom = 0
+            , left = 20
+            }
+        ]
+        children
+
+
+
+-- TODO: second level should have different bullet symbol
+
+
+li : List (Element msg) -> Element msg
+li children =
+    row [ width fill ]
+        [ el [ width (px 20), alignTop ] (text "•")
+        , paragraph
+            [ Font.size 16
+            , Font.color Colors.text
+            , HtmlA.style "word-break" "break-word" |> htmlAttribute
+            , spacing 3
+            ]
+            children
+        ]
+
+
+
+-- This strips down margin-top.
+-- Works without Element.html https://ellie-app.com/7gzQRzKDzQga1
+-- [Support for lists (and other flow content) · Issue #58 · mdgriffith/elm-ui](https://github.com/mdgriffith/elm-ui/issues/58)
+-- ul : List String -> Element msg
+-- ul texts =
+--     case List.reverse texts of
+--         first :: rest ->
+--             Html.ul [ HtmlA.style "margin" "0" ]
+--                 (Html.li [] [ Html.text first ]
+--                     :: List.map (Html.li [ HtmlA.style "margin-top" "4px" ] << List.singleton << Html.text) rest
+--                 )
+--                 |> html
+--         [] ->
+--             none
