@@ -190,12 +190,13 @@ ul children =
 li : List (Element msg) -> Element msg
 li children =
     row [ width fill ]
-        [ el [ width (px 20), alignTop ] (text "•")
+        [ el [ width (px 20), height (px 20), alignTop, moveUp 2 ] (text "•")
         , paragraph
             [ Font.size 16
             , Font.color Colors.text
             , HtmlA.style "word-break" "break-word" |> htmlAttribute
             , spacing 3
+            , alignTop
             ]
             children
         ]
