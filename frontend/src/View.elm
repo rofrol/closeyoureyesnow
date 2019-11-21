@@ -69,7 +69,7 @@ view _ =
                     ]
                 , h2 "Relax your body"
                 , p [ text "This the technique I more or less use to relax my body:" ]
-                , ul
+                , ol
                     [ li [ text "Sit back in your chairs and put your feet flat on the deck. Knees apart, your hands limp on the inside of your lap. Now, close your eyes and drop your chin until it rests on your chest." ]
                     , li [ text "Let’s breathe slowly, deeply, and regularly. Take all the wrinkles out of your forehead. Relax your scalp. Just let go. Now let your jaw sag-g-g. Let it drop open. Now relax the rest of your face muscles. Get the brook trout look on your face. Even relax your tongue and lips. Just let them go loose. Breathe slowly." ]
                     , li [ text "Now, let’s go after the eight muscles that control your eyes. Let them go limp in their sockets. No focus, just let them go limp. Breathe slowly." ]
@@ -184,11 +184,40 @@ ul children =
         (List.map
             (\child ->
                 row [ width fill ]
-                    [ el [ width (px 20), height (px 20), alignTop, moveUp 2 ] (text "•")
+                    [ el
+                        [ width (px 20)
+                        , height (px 20)
+                        , alignTop
+                        , moveUp 2
+                        ]
+                        (text "•")
                     , child
                     ]
             )
             children
+        )
+
+
+ol children =
+    column
+        [ spacing 16
+        , width fill
+        , paddingEach { each | bottom = 16, left = 20 }
+        ]
+        (List.map
+            (\( i, child ) ->
+                row [ width fill ]
+                    [ el [ width (px 40), alignTop, Font.size 16 ]
+                        (el
+                            [ alignRight
+                            , paddingEach { each | right = 10 }
+                            ]
+                            (text (String.fromInt (i + 1) ++ "."))
+                        )
+                    , child
+                    ]
+            )
+            (List.indexedMap Tuple.pair children)
         )
 
 
