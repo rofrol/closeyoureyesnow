@@ -37,12 +37,7 @@ view _ =
                         (text "scene in the sleeping pod from The Fifth Element (1997)")
                     , text ":"
                     ]
-                , p
-                    [ image [ width fill ]
-                        { src = "/TheFifthElement1997TakeoffScene.gif"
-                        , description = ""
-                        }
-                    ]
+                , img "/TheFifthElement1997TakeoffScene.gif"
                 , p [ text "After pressing the button you fall asleep instantly." ]
                 , p [ text "How can we have similar device today? Or similar effect with some techinque?" ]
                 , p [ text "It looks like we can have it." ]
@@ -50,12 +45,7 @@ view _ =
                 , p [ text "I am applying below techniques on myself, and it works since 2019-11-13 so 7 nights already." ]
                 , h2 "Alarms"
                 , p [ text "First you need to set two alarms with snooze option disabled. Screenshots are from ios." ]
-                , p
-                    [ image [ width fill ]
-                        { src = "/alarms.gif"
-                        , description = ""
-                        }
-                    ]
+                , img "/alarms.gif"
                 , p [ text "When the first alarm rings, prepare very quickly. 5 minutes is very shor time." ]
                 , p [ text "So when the second alarm rings, you must immediately close your eyes. If you haven't finished washing your teeth or drinking water, do it with your eyes closed. No excuses." ]
                 , h2 "Attitude"
@@ -209,3 +199,12 @@ a url label =
         { url = url
         , label = label
         }
+
+
+img url =
+    p
+        [ image [ width fill ]
+            { src = url
+            , description = ""
+            }
+        ]
