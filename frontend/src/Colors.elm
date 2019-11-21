@@ -45,3 +45,23 @@ transparent =
 
 lightYellow =
     rgba255 255 254 235 0.6
+
+
+text =
+    rgb255 36 41 46
+
+
+blockquote =
+    rgb255 106 115 125
+
+
+blockquoteBorder =
+    rgb255 223 226 229
+
+
+headingBorder =
+    rgb255 234 235 239
+
+
+link =
+    rgb255 3 102 214
