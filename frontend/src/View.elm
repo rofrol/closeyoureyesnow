@@ -127,7 +127,7 @@ p children =
         [ Font.size 16
         , Font.color Colors.text
         , HtmlA.style "word-break" "break-word" |> htmlAttribute
-        , spacing 10
+        , spacing 5
         , paddingEach { each | bottom = 16 }
         ]
         children
