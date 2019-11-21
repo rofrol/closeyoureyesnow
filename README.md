@@ -14,7 +14,7 @@ https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sle
 
 After reading this, I thought about [scene in the sleeping pod from The Fifth Element (1997)](https://youtu.be/UENRVfdnGxs?t=53):
 
-![](/frontend/TheFifthElement1997TakeoffScene.gif)
+![](/frontend/static/TheFifthElement1997TakeoffScene.gif)
 
 After pressing the button you fall asleep instantly.
 
@@ -30,7 +30,7 @@ I am applying below techniques on myself, and it works since 2019-11-13 so 7 nig
 
 First you need to set two alarms with snooze options disabled. Screenshots are from ios.
 
-![](/frontend/alarms.gif)
+![](/frontend/static/alarms.gif)
 
 When the first alarm rings, prepare very quickly. 5 minutes is very shor time.
 

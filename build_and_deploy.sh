@@ -7,7 +7,7 @@ DEVEL='devel'
 echo bulid client ...
 
 mkdir -p build
-cp frontend/index.html build/
+cp -r frontend/static/* build/
 (cd frontend && elm make src/Main.elm --output ../build/elm.js)
 
 echo reset $DEPLOY branch to $DEVEL ...
