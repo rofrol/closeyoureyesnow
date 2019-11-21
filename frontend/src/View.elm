@@ -27,21 +27,18 @@ view _ =
                     , "This is where your approach to Time Management should begin"
                     ]
                 , p
-                    [ link [ Font.color Colors.link ]
-                        { url = "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/"
-                        , label = text "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/"
-                        }
+                    [ a "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/"
+                        (text "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/")
                     ]
                 , p
                     [ text "After reading this, I thought about this "
-                    , link []
-                        { url = "https://youtu.be/UENRVfdnGxs?t=53"
-                        , label = text "scene in the sleeping pod from The Fifth Element (1997)"
-                        }
+                    , a
+                        "https://youtu.be/UENRVfdnGxs?t=53"
+                        (text "scene in the sleeping pod from The Fifth Element (1997)")
                     , text ":"
                     ]
                 , p
-                    [ image []
+                    [ image [ width fill ]
                         { src = "/TheFifthElement1997TakeoffScene.gif"
                         , description = ""
                         }
@@ -49,6 +46,28 @@ view _ =
                 , p [ text "After pressing the button you fall asleep instantly." ]
                 , p [ text "How can we have similar device today? Or similar effect with some techinque?" ]
                 , p [ text "It looks like we can have it." ]
+                , h2 "Works for me"
+                , p [ text "I am applying below techniques on myself, and it works since 2019-11-13 so 7 nights already." ]
+                , h2 "Alarms"
+                , p [ text "First you need to set two alarms with snooze option disabled. Screenshots are from ios." ]
+                , p
+                    [ image [ width fill ]
+                        { src = "/alarms.gif"
+                        , description = ""
+                        }
+                    ]
+                , p [ text "When the first alarm rings, prepare very quickly. 5 minutes is very shor time." ]
+                , p [ text "So when the second alarm rings, you must immediately close your eyes. If you haven't finished washing your teeth or drinking water, do it with your eyes closed. No excuses." ]
+                , h2 "Attitude"
+                , p [ text "You need to want to fall a asleep. Otherwise you coul lay in your bad awake for several hours like me. If you have this attitude, you can apply next techniques." ]
+                , h2 "Meditation"
+                , p [ text "According to Sadhguru - Learn How To Sleep Correctly you need to:" ]
+
+                --     sleep with your head directed to East (best) or West (good). North and South are very bad.
+                --     repeat: When you inhale say in your mind "This is not my body", when you exhale "This is not my mind".
+                -- I'm not sure if this direction helps, but this mantra definitelly helps me.
+                -- I am also focusing on my breath.
+                -- I am using here Vipassana Meditation which I learnt from Mindfulness in Plain English by Ven. Henepola Gunaratana. PDF. Polish translation in web, pdf, epub formats.
                 ]
             )
         ]
@@ -173,3 +192,20 @@ blockquote texts =
 
 fontWeight weight =
     HtmlA.style "font-weight" (String.fromInt weight) |> htmlAttribute
+
+
+a url label =
+    link
+        [ Font.color Colors.link
+        , Border.color Colors.transparent
+        , Border.widthEach
+            { bottom = 1
+            , left = 0
+            , top = 0
+            , right = 0
+            }
+        , mouseOver [ Border.color <| Colors.link ]
+        ]
+        { url = url
+        , label = label
+        }
