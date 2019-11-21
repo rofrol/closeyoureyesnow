@@ -28,13 +28,13 @@ view _ =
                     ]
                 , p
                     [ a "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/"
-                        (text "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/")
+                        (Just "https://www.reddit.com/r/TimeManagement/comments/d6ahdu/do_not_compromise_on_sleep/")
                     ]
                 , p
                     [ text "After reading this, I thought about this "
                     , a
                         "https://youtu.be/UENRVfdnGxs?t=53"
-                        (text "scene in the sleeping pod from The Fifth Element (1997)")
+                        (Just "scene in the sleeping pod from The Fifth Element (1997)")
                     , text ":"
                     ]
                 , img "/TheFifthElement1997TakeoffScene.gif"
@@ -51,7 +51,7 @@ view _ =
                 , h2 "Attitude"
                 , p [ text "You need to want to fall a asleep. Otherwise you coul lay in your bad awake for several hours like me. If you have this attitude, you can apply next techniques." ]
                 , h2 "Meditation"
-                , p [ text "According to ", a "https://www.youtube.com/watch?v=3soroEZ3yBk" (text "Sadhguru - Learn How To Sleep Correctly"), text " you need to:" ]
+                , p [ text "According to ", a "https://www.youtube.com/watch?v=3soroEZ3yBk" (Just "Sadhguru - Learn How To Sleep Correctly"), text " you need to:" ]
                 , ul
                     [ li [ text "Sleep with your head directed to East (best) or West (good). North and South are very bad." ]
                     , li [ text """Repeat: when you inhale say in your mind "This is not my body", when you exhale "This is not my mind".""" ]
@@ -60,11 +60,11 @@ view _ =
                 , p [ text "I am also focusing on my breath." ]
                 , p
                     [ text "I am using here Vipassana Meditation which I learnt from "
-                    , a "http://www.vipassana.com/meditation/mindfulness_in_plain_english.php" (text "Mindfulness in Plain English by Ven. Henepola Gunaratana")
+                    , a "http://www.vipassana.com/meditation/mindfulness_in_plain_english.php" (Just "Mindfulness in Plain English by Ven. Henepola Gunaratana")
                     , text "."
-                    , a "http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf" (text "PDF")
+                    , a "http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf" (Just "PDF")
                     , text ". "
-                    , a "http://sasana.wikidot.com/medytacja-vipassana-w-prostych-slowach" (text "Polish translation")
+                    , a "http://sasana.wikidot.com/medytacja-vipassana-w-prostych-slowach" (Just "Polish translation")
                     , text " in web, pdf, epub formats."
                     ]
                 , h2 "Relax your body"
@@ -80,6 +80,12 @@ view _ =
                     , li [ text "Now for your lower body. Talk to your right thigh muscles. Let them go to a dead weight on the chair. Let the meat hang on the bones. Go through the same routine for the right calf muscles. Then all the muscles of your right ankle and foot. Tell yourself that your right leg has no bones in it. It is just a flabby, heavy weight on the deck. Repeat the process with your left thigh, calf, ankle, and foot." ]
                     , li [ text "At present you are all relaxed physically, or think you are. For a little insurance, let’s take three deep breaths and when you let them out, blow out all the remaining tensions, one . . . whoosh, two . . . whoosh, three . . . whoosh." ]
                     , li [ text "You should relax every part of you body. Concentrating your focus on every part of your body one by one, and trying to relax it." ]
+                    ]
+                , ul
+                    [ li [ a "https://www.artofmanliness.com/articles/fall-asleep-fast/" Nothing ]
+
+                    -- https://skeptics.stackexchange.com/questions/41528/relax-and-win-classified-military-method-to-fall-asleep-quick
+                    -- https://www.amazon.com/Relax-Win-Championship-Lloyd-Winter/dp/0498025411
                     ]
                 ]
             )
@@ -156,7 +162,8 @@ fontWeight weight =
     HtmlA.style "font-weight" (String.fromInt weight) |> htmlAttribute
 
 
-a url label =
+a : String -> Maybe String -> Element msg
+a url maybeText =
     link
         [ Font.color Colors.link
         , Border.color Colors.transparent
@@ -164,7 +171,7 @@ a url label =
         , mouseOver [ Border.color <| Colors.link ]
         ]
         { url = url
-        , label = label
+        , label = text (maybeText |> Maybe.withDefault url)
         }
 
 
