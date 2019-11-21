@@ -2,7 +2,7 @@
 set -e # stop on error
 
 DEPLOY='gh-pages'
-DEVEL='devel'
+DEVEL='master'
 
 echo bulid client ...
 
