@@ -227,7 +227,7 @@ ol children =
         (List.map
             (\( i, child ) ->
                 row [ width fill ]
-                    [ el [ width (px 40), alignTop, Font.size 16 ]
+                    [ el [ width (px 20), alignTop, Font.size 16 ]
                         (el
                             [ alignRight
                             , paddingEach { each | right = 10 }
