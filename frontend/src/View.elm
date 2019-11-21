@@ -85,11 +85,9 @@ h1 text_ =
             , Border.widthEach { each | bottom = 1 }
             , width fill
             ]
-            (paragraph
+            (baseParagraph
                 [ Font.size 32
                 , Font.bold
-                , Font.color Colors.text
-                , HtmlA.style "word-break" "break-word" |> htmlAttribute
                 , paddingEach { each | bottom = 9 }
                 ]
                 [ text text_ ]
@@ -109,11 +107,9 @@ h2 text_ =
             , Border.widthEach { each | bottom = 1 }
             , width fill
             ]
-            (paragraph
+            (baseParagraph
                 [ Font.size 24
                 , Font.bold
-                , Font.color Colors.text
-                , HtmlA.style "word-break" "break-word" |> htmlAttribute
                 , paddingEach { each | bottom = 7 }
                 ]
                 [ text text_ ]
@@ -123,14 +119,7 @@ h2 text_ =
 
 p : List (Element msg) -> Element msg
 p children =
-    paragraph
-        [ Font.size 16
-        , Font.color Colors.text
-        , HtmlA.style "word-break" "break-word" |> htmlAttribute
-        , spacing 5
-        , paddingEach { each | bottom = 16 }
-        ]
-        children
+    baseParagraph [ paddingEach { each | bottom = 16 } ] children
 
 
 blockquote texts =
@@ -145,7 +134,7 @@ blockquote texts =
             , paddingXY 16 0
             , spacing 10
             ]
-            (List.map (el [] << text) texts)
+            (List.map (baseParagraph [] << List.singleton << text) texts)
         )
 
 
@@ -191,14 +180,7 @@ li : List (Element msg) -> Element msg
 li children =
     row [ width fill ]
         [ el [ width (px 20), height (px 20), alignTop, moveUp 2 ] (text "•")
-        , paragraph
-            [ Font.size 16
-            , Font.color Colors.text
-            , HtmlA.style "word-break" "break-word" |> htmlAttribute
-            , spacing 3
-            , alignTop
-            ]
-            children
+        , baseParagraph [ alignTop ] children
         ]
 
 
@@ -221,3 +203,20 @@ li children =
 
 each =
     { top = 0, right = 0, bottom = 0, left = 0 }
+
+
+lineSpacing =
+    5
+
+
+baseParagraph attrs children =
+    paragraph
+        ([ Font.size 16
+         , Font.color Colors.text
+         , HtmlA.style "word-break" "break-word" |> htmlAttribute
+         , spacing lineSpacing
+         , alignTop
+         ]
+            ++ attrs
+        )
+        children
