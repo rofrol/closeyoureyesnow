@@ -6,6 +6,7 @@ set -e # stop on error
 # I use gh-pages branch so that I don't polute repository with some generated code like js.
 # You need to create gh-pages branch first to make it available in the settings.
 # for github.com/name/repo you deploy to branch gh-pages and see result at name.github.io/repo
+# https://stackoverflow.com/questions/4750520/git-branch-gh-pages/58993849#58993849
 
 DIR=$(dirname "$(readlink -f "$0")")
 echo $DIR
