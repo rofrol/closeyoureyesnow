@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e # stop on error
 
+# github pages needs to enabled for repository.
+# for github.com/name/name.github.io you deploy to branch master and see results in name.github.io.
+# I use gh-pages branch so that I don't polute repository with some generated code like js.
+# You need to create gh-pages branch first to make it available in the settings.
+# for github.com/name/repo you deploy to branch gh-pages and see result at name.github.io/repo
+
 DIR=$(dirname "$(readlink -f "$0")")
 echo $DIR
 cd "$DIR"
