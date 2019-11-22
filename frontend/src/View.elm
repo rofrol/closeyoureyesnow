@@ -13,7 +13,7 @@ import Types exposing (..)
 
 view : Model -> Browser.Document Msg
 view _ =
-    { title = "Example"
+    { title = "Close Your Eyes Now"
     , body =
         [ layout
             []
