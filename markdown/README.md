@@ -158,6 +158,43 @@ Dr. Cohen’s team plans to explore, in greater detail, the role of these early 
 - https://www.ninds.nih.gov/News-Events/News-and-Press-Releases/Press-Releases/Want-learn-new-skill-Take-some-short-breaks
 - https://news.ycombinator.com/item?id=19661949
 
+## Yoga Nidra
+
+The powerful and dynamic technique of Yoga Nidra, or inner conscious relaxation, which is also known as conscious sleep, or the Yogi's sleep.
+
+Being relaxed is essential for sleep. If you are in any state of tension, feel irritable, worried, have too much on your mind, are pressured or unable to cope, then it is very hard for either the body or mind to let go and be at ease. Yoga Nidra is a deep relaxation technique that has been used for thousands of years to release unconscious inner layers of tension and trauma, whether physical, mental or emotional. Through the practice you are able to tap into a place of peace that leads to an easeful sleep.
+
+In this way you will feel more refreshed than after many hours of sleep. Eventually, being relaxed and peaceful will permeate everything you do. Your mind will be come clearer and decisions are easier, problems are solved more simply, you can cope with whatever is being asked of you, you will be more content and will sleep more deeply. And all that equals more joy, happiness, and love.
+
+What is unique about this practice, and what differs it from other relaxation methods, is the sankalpa or resolve. The practice both begins and ends with repeating this positive affirmation, a short statement clarifying your intent. This is not just about giving up smoking or losing weight, although it can be used for this purpose, but invites you to focus on a deeper purpose.
+
+It is important that your resolve feels right for you, as you will use it each time you practice until it has become an integrated expression of your being. Keep it short and clear. Here are a few suggestions for making a resolve, either to help you sleep or to uplift your life, but we urge you to create your own.
+
+- I will sleep peacefully and deeply
+- I release the day and calmly enter into a time of deep sleep
+- I am worthy and beautiful, and I have abundant resources and inner strength
+- I am filled with love and compassion
+
+After making the resolve, the practice continues with a rotation of awareness through each part of the body. In this way, you are connecting your body, emotions and mental awareness into a unified whole. This rotation of consciousness is important as it relaxes each part of the brain; it is through this rotation that you are able to relax so completely.
+
+It is important not to judge yourself. It does not matter if you are unable to relax, or if you just lie there thinking for the whole session. During Yoga Nidra you maintain a stream of unbroken awareness. Just stay with the practice and be patient -- you are not dong the practice in order to create more tension!
+
+Practice for as long as feels comfortable for you, whether it is for 10 or 30 minutes. It is more important that you do it regularly than for how long. You can do it at any time of the day. Lie with your back on the ground or on your bed with your arms parallel to your body with palms up, legs slightly apart, eyes closed with a pillow under you head and a blanket covering you. Breathe in and out naturally through your nose.
+
+If you are doing it in bed at night when you are ready to sleep, then have your palms facing downward. You may even fall asleep before you complete the practice, which is fine. We have given instructions below, but we also have a CD available from our website: www.edanddebshapiro.com
+
+### Practice: Yoga Nidra
+
+Lying on your back, become aware of your breathing and watch your natural breath as it enters and leaves. Begin to relax as you breathe, letting go of tension on the out breath, breathing in easefulness on the in breath.
+
+Now create a positive affirmation, something that is meaningful to you, such as: My body is relaxed ... my mind is calm ... my heart is open and loving. Silently repeat your affirmation three times. Now mentally relax your body by slowly visualizing each part. Bring your attention to your right foot, tighten the muscles, hold, then let go and relax your foot. Do the same with the whole of your right leg ... then the left foot ... and the left leg. Shake both legs, they are relaxed and at ease. Now move to the buttocks ... tightening, holding and releasing. Keep breathing. Slowly continue up your back ... the lower back ... middle back ... upper back ... tightening, holding and releasing, letting go with the out breath. Feel your back sinking into the ground, releasing, relaxing.
+
+Now bring you attention to your abdomen ... tightening and letting go ... to the chest ... take a deep breathe and release it, relaxing your chest completely. Bring your attention to your right hand ... your right arm ... right shoulder, tensing and relaxing. Then to your left hand ... left arm ... left shoulder ... tightening, holding and releasing. Shake both arms and let them completely relax. Now bring attention to your neck ... relaxing ... to your face ... tensing and letting go ... and then to the whole of your head... tightening and relaxing. Feel your whole body releasing and letting go with each out breath. Now imagine you are sitting in a beautiful garden, a place where you feel safe and nurtured. The heat of the sun is warm, you can hear the sound of wild bird song all around you and smell the sweet scent of the flowers. Allow the ease and beauty of this place to soothe you, feel replenished and renewed by nature. Breathe gently, let the visualization fade.
+
+Now repeat the affirmation you made at the beginning, three times. Then take a deep breath and let it go. Begin to externalize your awareness, become aware of your surroundings, roll over on your side and slowly sit up if you want to. Have a good stretch, have a smile on your face and give yourself a hug!
+
+https://www.huffpost.com/entry/learn-to-sleep-the-way-a_b_417835
+
 ## More links
 
 - [What Happens to the Body on No Sleep | Hacker News](https://news.ycombinator.com/item?id=21205021)
